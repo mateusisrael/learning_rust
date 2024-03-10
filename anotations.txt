@@ -1,0 +1,18 @@
+- O estilo Rust consiste em recuar com quatro espaços, não com uma tabulação.
+- println! chama uma macro Rust. Se tivesse chamado uma função, ela seria inserida como println(sem o !)
+- As macros nem sempre seguem as mesmas regras que as funções.
+- Rust is an ahead-of-time compiled language
+
+[CARGO]
+- Usar cargo runé mais conveniente do que lembrar de executar cargo builde depois usar todo o caminho para o binário,
+  por isso a maioria dos desenvolvedores usa o cargo run.
+- Cargo também fornece um comando chamado cargo check. Este comando verifica rapidamente seu código para garantir que
+  ele seja compilado, mas não produza um executável:
+
+- Vamos recapitular o que aprendemos até agora sobre Cargo:
+    Podemos criar um projeto usando cargo new.
+    Podemos construir um projeto usando cargo build.
+    Podemos construir e executar um projeto em uma única etapa usando o cargo run.
+    Podemos construir um projeto sem produzir um binário para verificar erros usando cargo check.
+    Em vez de salvar o resultado da construção no mesmo diretório do nosso código, Cargo o armazena no diretório target/debug .
+    Quando seu projeto estiver finalmente pronto para lançamento, você poderá usá-lo cargo build --releasepara compilá-lo com otimizações. 
